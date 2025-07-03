@@ -6,7 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-import '~/styles/global.module.scss';
+import '~/styles/global.scss';
 import { Header } from "~/component";
 
 

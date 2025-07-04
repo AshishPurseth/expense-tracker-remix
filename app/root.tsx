@@ -11,7 +11,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import '~/styles/global.scss';
-import { Footer, Header } from "~/component";
+import { Footer } from "~/component";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -36,7 +36,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Header />
         <main className='main'>{children}</main>
         <ScrollRestoration />
         <Scripts />
@@ -56,7 +55,6 @@ export const ErrorBoundary = ({ error }: { error: Error }) => {
         <Links />
       </head>
       <body>
-        <Header />
         <main className='main'>
           <h2>An error occured</h2>\<p>{error.message}</p>
           <p>
@@ -83,7 +81,6 @@ export const CatchBoundary = () => {
         <Links />
       </head>
       <body>
-        <Header />
         <main className='main'>
           <h2>The page could not be found or access</h2>\
           {isRouteErrorResponse(error) ? (

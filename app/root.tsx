@@ -11,7 +11,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import "~/styles/global.scss";
-import { Footer, Header } from "~/component";
+import { Header } from "~/component";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -40,7 +40,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <main className='main'>{children}</main>
         <ScrollRestoration />
         <Scripts />
-        <Footer />
       </body>
     </html>
   );
@@ -63,7 +62,6 @@ export const ErrorBoundary = ({ error }: { error: Error }) => {
             Back to <Link to='/'>saftey</Link>
           </p>
         </main>
-        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -98,7 +96,6 @@ export const CatchBoundary = () => {
             Back to <Link to='/'>saftey</Link>
           </p>
         </main>
-        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>

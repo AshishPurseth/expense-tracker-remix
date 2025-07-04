@@ -14,7 +14,8 @@
     "prisma:generate": "prisma generate --schema=./prisma/schema.prisma --env-file=./app/config/.env.development",
     "prisma:migrate": "prisma migrate dev --name init --schema=./prisma/schema.prisma --env-file=./app/config/.env.development",
     "format": "prettier --write .",
-    "lint:css": "stylelint 'app/**/*.scss'"
+    "lint:css": "stylelint 'app/**/*.scss'",
+    "clean": "rimraf ./build .cache"
   },
   "dependencies": {
     "@prisma/client": "^6.11.0",
@@ -46,6 +47,7 @@
     "postcss": "^8.4.38",
     "prettier": "^3.6.2",
     "prisma": "^6.11.0",
+    "rimraf": "^6.0.1",
     "sass": "^1.89.2",
     "stylelint": "^16.21.1",
     "stylelint-config-prettier": "^9.0.5",

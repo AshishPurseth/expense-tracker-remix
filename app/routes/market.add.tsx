@@ -1,6 +1,6 @@
 import { ActionFunction } from '@remix-run/node';
 import { redirect } from '@remix-run/react';
-import { MarketForm } from '~/component/MarketForm/marketForm';
+import { MarketForm } from '~/component';
 
 export const action: ActionFunction = async ({ request }) => {
   const formData = await request.formData();

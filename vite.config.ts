@@ -1,7 +1,7 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 import { defineConfig, loadEnv } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
-
+import path from 'path';
 declare module "@remix-run/node" {
   interface Future {
     v3_singleFetch: true;
@@ -27,5 +27,10 @@ export default defineConfig(({ mode }) => {
     define: {
       "process.env": env,
     },
+    resolve: {
+    alias: {
+      '~': path.resolve(__dirname, 'app'),
+    }
+  }
   };
 });

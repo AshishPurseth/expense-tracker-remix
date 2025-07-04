@@ -10,7 +10,7 @@ import {
   useRouteError,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-import "~/styles/global.scss";
+import '~/styles/global.scss';
 import { Footer, Header } from "~/component";
 
 export const links: LinksFunction = () => [
@@ -105,3 +105,7 @@ export const CatchBoundary = () => {
     </html>
   );
 };
+
+export default function App() {
+  return <Outlet />;
+}

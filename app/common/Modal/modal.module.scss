@@ -1,0 +1,27 @@
+.modalBackdrop {
+  position: fixed;
+  inset: 0; 
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; // header, body, footer pattern (optional)
+  overflow: hidden;
+
+  // If your modal has scrollable body content
+  & > .modal-body {
+    overflow-y: auto;
+    padding: 1rem 0;
+  }
+}

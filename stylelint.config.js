@@ -8,6 +8,7 @@ export default {
     rules: {
         // fixes issue with unknown SCSS at-rules like @use, @include, etc.
         'at-rule-no-unknown': null,
-        'scss/at-rule-no-unknown': true
+        'scss/at-rule-no-unknown': true,
+        'selector-class-pattern': null
     }
 }

@@ -1,11 +1,9 @@
 import styles from './footer.module.scss'
 
-export const Footer = () =>{
+export const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <section>
-                Footer
-            </section>
+            <section className={styles.inner}>pursethLegacy@gmail.com</section>
         </footer>
     )
 }

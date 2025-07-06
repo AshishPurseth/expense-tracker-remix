@@ -1,99 +1,99 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #007bff;
+    --primary-color: #007bff;
 }
 
 html,
 body {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 3.5rem 1fr 3.5rem;
-  font-family:
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3.5rem 1fr 3.5rem;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        'Segoe UI',
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        'Helvetica Neue',
+        sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .main {
-  padding: 2rem;
-  margin: 0 auto;
-  width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .input {
-  height: 40px;
-  vertical-align: middle;
-  display: inline-block;
-  max-width: 100%;
-  width: 100%;
-  padding: 0 10px;
-  background: #fff;
-  color: #666;
-  border: 1px solid #e5e5e5;
-  transition: 0.2s ease-in-out;
-  transition-property: color, background-color, border;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: 0.2s ease-in-out;
+    transition-property: color, background-color, border;
 }
 
 .input:focus {
-  outline: 0;
-  background-color: #fff;
-  color: #666;
-  border-color: #1e87f0;
+    outline: 0;
+    background-color: #fff;
+    color: #666;
+    border-color: #1e87f0;
 }
 
 .button {
-  margin: 0;
-  border: none;
-  overflow: visible;
-  font: inherit;
-  color: inherit;
-  appearance: none;
-  border-radius: 0;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 30px;
-  vertical-align: middle;
-  font-size: 14px;
-  line-height: 38px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color, border-color;
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    appearance: none;
+    border-radius: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s ease-in-out;
+    transition-property: color, background-color, border-color;
 }
 
 .danger {
-  background-color: #f0506e;
-  color:#fff
+    background-color: #f0506e;
+    color: #fff;
 }
 
 .primary {
-  background-color: #0f7ae5;
-  color:#fff
+    background-color: #0f7ae5;
+    color: #fff;
 }

@@ -1,15 +1,13 @@
 import styles from './modal.module.scss'
 
-interface Props{
+interface Props {
     children: React.ReactNode
 }
 
-export const Modal = ({children}: Props)=>{
-    return(
+export const Modal = ({ children }: Props) => {
+    return (
         <section className={styles.modalBackdrop}>
-            <section className={styles.modal}>
-                {children}
-            </section>
+            <section className={styles.modal}>{children}</section>
         </section>
     )
 }

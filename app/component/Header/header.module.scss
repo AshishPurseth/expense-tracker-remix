@@ -1,4 +1,4 @@
-.mainHeader{
+.main-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rebeccapurple;
@@ -6,17 +6,17 @@
     padding: 0 1rem;
 }
 
-.logo{
+.logo {
     height: 3rem;
 }
 
-.navigation{
+.navigation {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
     grid-column-gap: 2rem;
 }
 
-.link{
+.link {
     color: white;
 }

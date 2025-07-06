@@ -1,1 +1,1 @@
-export declare const modalHeader: string;
+export declare const modalHeader: string
